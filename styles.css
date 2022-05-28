@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url(//db.onlinewebfonts.com/c/a5421f5aa8dda33abf9b56a9366cab4e?family=LIBRARY+3+AM);
+
+@font-face {font-family: "LIBRARY 3 AM";
+    src: url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.svg#LIBRARY 3 AM") format("svg"); /* iOS 4.1- */
+}
+
 body {
     min-height: 100vh;
     margin : 0;
