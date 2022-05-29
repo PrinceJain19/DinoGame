@@ -101,7 +101,7 @@ document.addEventListener("keydown", function(event) {
 
 var touchArea = document.getElementById("tap");
 
-var realHeight = ((600/screen.width) * screen.height) - 100;
+var realHeight = ((600/screen.width) * screen.height) - 125;
 var touchHeight = parseInt((realHeight - touchArea.offsetTop + 64)/2);
 
 touchArea.style.height =  touchHeight + "px";
