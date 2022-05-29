@@ -106,8 +106,6 @@ var touchHeight = parseInt((realHeight - touchArea.offsetTop + 64)/2);
 
 touchArea.style.height =  touchHeight + "px";
 touchArea.style.paddingTop = (touchHeight - 64) + "px";
-console.log(touchArea.style.height)
-console.log(touchArea.style.paddingTop)
 
 touchArea.addEventListener('touchstart', e => {
     jump();
