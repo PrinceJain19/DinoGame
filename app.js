@@ -99,6 +99,16 @@ document.addEventListener("keydown", function(event) {
     jump();
 });
 
-document.addEventListener('touchstart', e => {
+var touchArea = document.getElementById("tap");
+
+var realHeight = (600/screen.width) * screen.height;
+var touchHeight = parseInt((realHeight - touchArea.offsetTop + 64)/2);
+
+touchArea.style.height =  touchHeight + "px";
+touchArea.style.paddingTop = (touchHeight - 64) + "px";
+console.log(touchArea.style.height)
+console.log(touchArea.style.paddingTop)
+
+touchArea.addEventListener('touchstart', e => {
     jump();
 });

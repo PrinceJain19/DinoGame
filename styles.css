@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Press+Start+2P&display=swap');
 
 @font-face {font-family: "LIBRARY 3 AM";
     src: url("https://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.eot"); /* IE9*/
@@ -9,8 +9,11 @@
     url("https://db.onlinewebfonts.com/t/a5421f5aa8dda33abf9b56a9366cab4e.svg#LIBRARY 3 AM") format("svg"); /* iOS 4.1- */
 }
 
+html {
+    min-width: 630px;
+}
+
 body {
-    min-height: 100vh;
     margin : 0;
     padding: 0;
     user-select: none;
@@ -19,18 +22,18 @@ body {
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
+    overflow-x: hidden;
 }
 
 .game {
     position: relative;
     top: 100px;
-    left: 15px;
+    /* left: 15px; */
     width: 600px;
     height: 200px;
     margin: auto;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    /* background-image: linear-gradient(transparent, white); */
     border-radius: 0.5rem;
 }
 
@@ -190,11 +193,36 @@ body {
 }
 
 .gamename {
-    width: 550px;
+    width: 500px;
     font-family: 'Library 3 AM';
     color: rgb(228, 225, 225);
     font-size: 10rem;
     margin: auto;
     padding-top: 6rem;
-    padding-left: 3.5rem;
+    /* padding-left: 3.5rem; */
+}
+
+#tap {
+    /* width: 600px;
+    border: 2px dotted white;
+    margin: auto; */
+    top: 0px;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 400px) {
+    #tap {
+        font-family: 'Dosis', sans-serif;
+        visibility: visible;
+        position: relative;
+        width: 600px;
+        border: 2px dashed rgb(213, 213, 213);
+        border-radius: 1rem;
+        margin: auto;
+        color: rgb(220, 220, 220);
+        text-align: center;
+        font-size: 4rem;
+    }
 }
